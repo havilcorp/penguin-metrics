@@ -12,7 +12,7 @@ services:
     
     volumes:
       # Configuration
-      - ./config.conf:/etc/penguin-metrics/config.conf:ro
+      - /home/kotvkompe/.config/penguin-metrics/config.conf:/etc/penguin-metrics/config.conf:ro
       
       # Host filesystem access for metrics
       - /proc:/host/proc:ro
